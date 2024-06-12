@@ -3,19 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+ 
    <!-- BOOTSTRAP CSS -->
-
+ 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
+ 
     <!-- OUR CUSTOM CSS -->
-
+ 
     <link rel="stylesheet" href="./CSS/style.css" />
-
+ 
     <!-- OUR CUSTOM JS -->
-
+ 
     <script defer asynch src="./js/script.js"></script>
-
+ 
     <title>Document</title>
   </head>
     <body>
@@ -23,15 +23,41 @@
         <header class="header">
             <h1>Image Search</h1>
         </header>
-
-        <div class="search-bar">
+ 
+        <div id="search-bar">
             <form>
                 <input type="text" id="destination_input" placeholder="What image would you like?" required>
-                <input type="submit" id="image_search_button" value="Search">
+                <button type="button" class="btn btn-success">Search</button>
             </form>
         </div>
-
-    <input id="Image_search" type="submit" value="Load more" />
+        <article class="d-flex justify-content-center flex-wrap" id="cards_container">
+ 
+        <div class="card" style="width: 15rem;">
+          <img src="https://images.unsplash.com/photo-1718174405504-6c65225786de?q=80&w=1288&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Wheat Field sunset">
+          <div class="card-body">
+                        <p class="card-text">Wheat Field Sunset</p>
+            <a href="https://unsplash.com/photos/a-field-of-tall-grass-with-the-sun-in-the-background-CGS6YqcSYfo" target="_blank" class="btn btn-light">Explore</a>
+          </div>
+        </div>
+          <div class="card" style="width: 15rem;">
+            <img src="https://images.unsplash.com/photo-1718174405504-6c65225786de?q=80&w=1288&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Wheat Field sunset">
+            <div class="card-body">
+                          <p class="card-text">Wheat Field Sunset</p>
+              <a href="https://unsplash.com/photos/a-field-of-tall-grass-with-the-sun-in-the-background-CGS6YqcSYfo" target="_blank" class="btn btn-light">Explore</a>
+            </div>
+          </div>
+            <div class="card" style="width: 15rem;">
+              <img src="https://images.unsplash.com/photo-1718174405504-6c65225786de?q=80&w=1288&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Wheat Field sunset">
+              <div class="card-body">
+                            <p class="card-text">Wheat Field Sunset</p>
+                <a href="https://unsplash.com/photos/a-field-of-tall-grass-with-the-sun-in-the-background-CGS6YqcSYfo" target="_blank" class="btn btn-light">Explore</a>
+              </div>
+            </div>
+        </div>
+      </article>
+      <div class="d-flex justify-content-center">
+        <button id="Load_More" type="button" class="btn btn-secondary">Load More</button>
+      </div>
   </body>
   <footer><a>Team 2 Website</a></footer>
 </html>
