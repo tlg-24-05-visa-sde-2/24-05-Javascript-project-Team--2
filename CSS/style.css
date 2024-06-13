@@ -63,3 +63,19 @@ body {
 .card {
   margin: 1em;
 }
+
+/* @keyframes animateBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Apply animation to the element */
+/* body {
+  background: linear-gradient(to right, #c4c4c4, #e1ffc4);
+  background-size: 200% 200%; /* Make sure the background is large enough */
+  /* animation: animateBackground 30s linear infinite; /* Adjust timing and animation type as needed */
+} */ */
