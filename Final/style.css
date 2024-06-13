@@ -1,15 +1,18 @@
-.bangers-regular {
-  font-family: "Bangers", system-ui;
+.chewy-regular {
+  font-family: "Chewy", system-ui;
   font-weight: 400;
   font-style: normal;
 }
 
 body {
-  background-color: #f9f9f9;
+  background-color: #f9f2ec;
   font-family: "Bangers", system-ui;
   line-height: 1.6;
   margin: 0;
-  padding-bottom: 100px; /* Ensure space for the fixed trending topics bar---fixed */
+  padding-bottom: 100px;
+}
+img:hover {
+  opacity: 0.5;
 }
 
 .material-symbols-outlined {
@@ -19,7 +22,7 @@ body {
 h1,
 h2,
 button {
-  font-family: "PT Sans Narrow", sans-serif;
+  font-family: "chewy", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -58,7 +61,7 @@ form {
   border: none;
   font-size: 18px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.692);
-  cursor: pointer;
+  cursor: grab;
   border-radius: 5px;
   transition: background-color 0.3s ease-in-out;
 }
@@ -116,7 +119,7 @@ form {
   margin: 20px auto;
   text-align: center;
   border-radius: 5px;
-  cursor: pointer;
+  cursor: grab;
   transition: background-color 0.3s ease-in-out;
   display: none;
 }
@@ -165,15 +168,14 @@ form {
 }
 
 #trending-list a {
-  color: white; /* Set the text color */
-  text-decoration: none; /* Remove underline */
+  color: white;
   padding: 10px;
   display: block;
   transition: color 0.3s ease;
 }
 
 #trending-list a:hover {
-  color: #0077b5; /* Change color on hover */
+  color: #1b72d6;
 }
 
 @media screen and (max-width: 768px) {
